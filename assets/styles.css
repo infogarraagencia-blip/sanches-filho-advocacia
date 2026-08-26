@@ -222,13 +222,16 @@ ul{list-style:none}
 /* ============================================================
    CREDENCIAIS
    ============================================================ */
-.creds{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-soft)}
-.creds-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:44px 26px}
-.cred{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;position:relative}
-.cred:not(:last-child)::after{content:"";position:absolute;right:-10px;top:50%;transform:translateY(-50%);width:1px;height:44px;background:var(--line)}
-.cred-num{font-family:var(--serif);font-size:3rem;font-weight:600;color:var(--cream);line-height:1}
-.cred-num small{color:var(--gold);font-size:1.6rem;vertical-align:top}
-.cred-label{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.creds{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-soft);padding:48px 0}
+.creds-eyebrow{text-align:center;margin-bottom:38px}
+.creds-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.cred{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;position:relative}
+.cred:not(:last-child)::after{content:"";position:absolute;right:-12px;top:16px;bottom:8px;width:1px;background:var(--line)}
+.cred-ic{width:46px;height:46px;border-radius:50%;border:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;color:var(--gold);margin-bottom:8px;background:rgba(228,194,138,.05)}
+.cred-ic svg{width:21px;height:21px}
+.cred-num{font-family:var(--serif);font-size:2.9rem;font-weight:600;color:var(--cream);line-height:1}
+.cred-num small{color:var(--gold);font-size:1.5rem;vertical-align:top}
+.cred-label{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);max-width:16ch}
 
 /* ============================================================
    CARDS (shared)
